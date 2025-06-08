@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+        #d1{
+            background-color: cadetblue;
+            border: 2px solid black;
+            height: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Show & Hide method 
+         FadeIn & FadeOut
+         SlideDown & SlideUp-->
+    <button id="btn">
+        Toggle Button
+    </button>
+    <div id="d1">
+        Submitted Successfully........ <br><br>
+    </div>
+    <script>
+      $("#btn").click(sample)
+      function sample(){
+        //  $('#d1').toggle(1700) 
+        //  $('#d1').slideToggle(2000)
+          $('#d1').fadeToggle(2000)
+
+}
+
+
+    </script>
+</body>
+</html>

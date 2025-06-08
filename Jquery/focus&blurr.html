@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+   
+   #sp1{
+    color: blanchedalmond;
+    display: none;
+   }
+    </style>
+</head>
+<body>
+<input type="text" id="txt">
+<span id="sp1">Use Gmail Only</span> 
+   
+    <script>
+$("#txt").focus(sample)
+function sample()
+{
+    $("#sp1").css("display","inline")
+}
+
+$("#txt").blur(sample1)
+function sample1()
+{
+    $("#sp1").css("display","none")
+}
+ 
+    </script>
+</body>
+</html>

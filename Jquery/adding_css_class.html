@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+   
+   .box1{
+    background-color: rgb(21, 226, 226);
+    height:60px;
+ 
+   }
+    </style>
+</head>
+<body>
+ 
+   <div id="d1">
+     div1
+   </div>
+   <button id="b1">Add</button>
+   <button id="b2">Remove</button>
+   <button id="b3">Toggle Button</button>
+   
+    <script>
+$("#b1").click(sample)
+function sample(){
+    $("#d1").addClass("box1")
+}
+ 
+$("#b2").click(sample1)
+function sample1(){
+    $("#d1").removeClass("box1")
+}
+ 
+$("#b3").click(sample3)
+function sample3(){
+    $("#d1").toggleClass("box1")
+}
+    </script>
+</body>
+</html>

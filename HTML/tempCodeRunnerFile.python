@@ -1,0 +1,31 @@
+import random
+import time
+def generate_random_sentence():
+    sentences=["Python is a powerful and versatile programming language.", "Coding is the key to unlocking the mysteries of software development.", "Practice makes perfect when it comes to programming.", "Keep calm and keep coading.", "Programming is the art of telling a computer what to do through code."]
+    return random.choice(sentences)
+def calculate_words_per_minute(start_time,end_time,typed_words):
+    minutes=(end_time-start_time)/60
+    words_per_minute=typed_words/minutes
+    return words_per_minute
+
+def main():
+    print("Welcome to the Speed Typing Game!")
+    input("Press Enter to Start")
+
+    sentence=generate_random_sentence()
+    print("Type the Following Sentences:")
+    print(sentence)
+
+    input("Press Enter to Start Typing...")
+    start_time=time.time()
+
+    typed_sentence=input("Type the Sentence:")
+    end_time=time.time()
+
+    typed_words=len(typed_sentence.split())
+    words_per_minute(start_time,end_time,typed_words)
+
+    print(f"Your Typing Speed:{calculate_words_per_minute:.2f}words per minute")
+
+if __name__=="__main__":
+    main()

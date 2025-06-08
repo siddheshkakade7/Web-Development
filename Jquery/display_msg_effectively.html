@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+        #d1{
+            background-color: cadetblue;
+            border: 2px solid black;
+            height: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Show & Hide method 
+         FadeIn & FadeOut
+         SlideDown & SlideUp-->
+    <button id="btn">
+        Submit
+    </button>
+    <div id="d1">
+        Submitted Successfully........ <br><br>
+        <button id="btn20">OK</button>
+    </div>
+    <script>
+       $("#btn").click(sample)
+        function sample(){
+        //   $("#d1").show(1500)
+       //    $("#d1").fadeIn(1500)
+         //    $("#d1").slideDown(1500)
+             
+        }
+
+        $("#btn").click(sample1)
+        function sample1(){
+        //    $("#d1").hide(1500)
+        //   $("#d1").fadeOut(1500)
+           $("#d1").slideUp(2000)
+              $("#d1").fadeTo(5000,0.4)
+        } 
+
+
+    </script>
+</body>
+</html>
