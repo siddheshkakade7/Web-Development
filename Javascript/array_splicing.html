@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var arr=[1,'steven',78.9,true]
+        console.log(arr.length)
+        document.write("<h1>Array Elements:</h1>")
+        arr.splice(2,0,'new_ele')   //splice(position,no.ele to delete, element)
+        document.write("<ul>")
+          for(i=0;i<arr.length;i++)
+          {
+            document.write("<li>"+ arr[i]+"</li>")
+          }
+          </script>
+     
+</body>
+</html>

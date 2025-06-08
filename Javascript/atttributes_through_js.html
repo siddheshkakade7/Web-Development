@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        img{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="Head">Heading</h1>
+    <img id="i1" height="200px" width="200px">
+    <script>
+       // console.log(document.getElementById("i1").getAttribute("src"))
+// giving img source through js 
+       document.getElementById("i1").setAttribute("src","Boy-image.png")
+
+// giving css prop. through js 
+document.getElementById("Head").style.fontSize="50px"
+document.getElementById("Head").style.backgroundColor="red"
+
+    </script>
+</body>
+</html>

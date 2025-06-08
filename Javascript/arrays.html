@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var arr=[1,'steven',78.9,true]
+        console.log(arr.length)
+        document.write("<h1>Array Elements:</h1>")
+        /*Delete/add from last*/
+        arr.push(60)
+        arr.pop()
+
+        /*Delete/add from start*/
+        arr.unshift('Siddhesh')
+        arr.shift()
+
+      //  document.write(arr)
+        document.write("<ul>")
+          for(i=0;i<arr.length;i++)
+          {
+            document.write("<li>"+ arr[i]+"</li>")
+          }
+          </script>
+     
+</body>
+</html>

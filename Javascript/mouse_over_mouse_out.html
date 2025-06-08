@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.</title>
+    <style>
+        div{
+            border: 2px solid red;
+            background-color: aliceblue;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+         
+    </div>
+
+
+
+    <script>
+        document.getElementById("d1").addEventListener("mouseover",sample)
+        function sample()
+        {
+            document.getElementById("d1").style.backgroundColor="black"
+        }
+
+        document.getElementById("d1").addEventListener("mouseout",sample1)
+        function sample1()
+        {
+            document.getElementById("d1").style.backgroundColor="aliceblue"
+        }
+    </script>
+</body>
+</html>

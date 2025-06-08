@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content:space-evenly;
+      height: 500px;
+      align-items:flex-start;
+ 
+    }
+    .div1{
+      height:100px;
+      width:100px;
+      background-color: aquamarine;
+      border:2px solid red;
+    }
+    #b2{
+     align-self: center;
+    }
+    #b3{
+      align-self: flex-end;
+    }
+ 
+ @media screen  and (max-width:400px){
+    .container{
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap ;
+      align-content:space-evenly;/*to align row when flex-wrap property is wrap*/
+    }
+    .div1{
+      height: 100px;
+      width:100px;
+      background-color:pink;
+      border:2px solid red;
+    }
+  }
+   
+ 
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="div1" id="b1">div1</div>
+  <div  class="div1" id="b2">div2</div>
+  <div  class="div1" id="b3">div3</div>
+  <div class="div1" id="b4">div4</div>
+ 
+  </div>
+ 
+</body>
+</html>

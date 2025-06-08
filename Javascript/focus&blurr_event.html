@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <span id="sp1">Use G-mail Only</span>
+    <br><br>
+    <input type="text" id="txt2">
+
+    <script>
+        document.getElementById("txt1").addEventListener("focus",function(){
+            document.getElementById("sp1").style.display='inline';
+
+        })
+        
+        document.getElementById("txt1").addEventListener("blur",function(){
+            document.getElementById("sp1").style.display='none';
+        })
+    </script>
+</body>
+</html>

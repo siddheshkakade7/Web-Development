@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      background-color:aliceblue;
+      height:50px;
+       width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap:nowrap;
+      justify-content:center;
+      align-content: center;
+    }
+    .b1{
+     background-color: aqua;
+      width:20%;
+    }
+    li{
+      list-style-type: none;
+      display: inline-block;
+    }
+    
+      #L1{li::before{
+      content: url("shopping-cart.png");}
+    }
+    @media screen and (max-width:500px){
+      .container{
+      background-color:aliceblue;
+      min-height:150px;
+      width: 100%;;
+      display:flex;
+      flex-direction:column;
+   
+    }
+    li{
+      list-style-type: none;
+      display: inline-block;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+     <div class="b1">
+        <a href="#">FlipKart</a>
+     </div>
+     <div class="b1">
+      <input type="search">
+     </div>
+     <div class="b1">
+      <button>Login</button>
+     </div>
+     <div class="b1" id="L1">
+      <ul>
+        <li>CART</li>
+      </ul>
+     </div>
+     <div class="b1">
+      <ul>
+        <li>Become a Seller</li>
+      </ul>
+     </div>
+     <div class="b1">
+      <a href="#">link</a>
+     </div>
+  </div>
+</body>
+</html>

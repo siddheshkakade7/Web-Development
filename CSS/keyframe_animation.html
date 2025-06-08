@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+           background-color: aqua;
+           height: 150px;
+           width: 150px;
+           position: relative;
+           animation: ex1 2s  3s 3;
+        }
+        @keyframes ex1{
+            0% { background-color: aqua;top: 0px;left: 0px;}
+            25% { background-color: brown;top: 0px;left: 200px; transform: scale(2);}
+            50% { top: 200px; left: 200px;background-color: black;}
+            75% { left: 0px; top: 200px;background-color: red;}
+            100% { background-color: bisque;top: 0px;left: 0px;transform: rotate(90deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1" >DIV1</div>
+</body>
+</html>

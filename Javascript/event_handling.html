@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click & double-click event</title>
+    <style>
+        img{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+         <img id="img1" height="200px" width="200px">
+    </div>
+
+    <button id="btn">Add image</button>
+
+    <script>
+       // document.getElementById("btn").addEventListener("dblclick",sample)
+      document.getElementById("btn").addEventListener("click",sample)
+       function sample(){ document.getElementById("img1").setAttribute("src","Boy-image.png")}
+    </script>
+</body>
+</html>

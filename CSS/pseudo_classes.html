@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For character value</title>
+    <style>
+        input:focus{
+            box-shadow: 2px 2px 2px 2px orange;
+        }
+        input:valid{
+            border: 2px inset ;
+        }
+        input:invalid{
+            box-shadow: 2px 2px 2px 2px black;
+            border: 2px solid blueviolet;
+        }
+        input:empty{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="response.html">
+        first_name:
+        <input type="text" autofocus pattern="[A-Za-z]*"> <br> <br>
+        last_name:
+        <input type="text">
+
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <style>
+      #div1{
+        background-color: antiquewhite;
+        border: 2px solid black;
+
+        padding: 10px;
+        box-shadow: 2px 2px 2px 2px black;
+      }
+    </style>
+</head>
+<body>
+ 
+    <body>
+        <div id="div1">
+        Select Account Type
+        <br><br>
+       <input type="radio" id="rb1" name="acc">Saving Account<br><br>
+       <input type="radio" id="rb2" name="acc">Current Account<br><br>
+       <input type="radio" id="rb3" name="acc">Loan Account<br><br> <hr>
+       Minimum Balance Amount:<input type="text" id="txt1">
+       </div>
+       
+       <script>
+      document.getElementById("rb1").addEventListener("change",function(){
+        document.getElementById("txt1").value='5000'
+      })
+      document.getElementById("rb2").addEventListener("change",function(){
+        document.getElementById("txt1").value='10000'
+      })
+      document.getElementById("rb3").addEventListener("change",function(){
+        document.getElementById("txt1").value='20000'
+      })
+       </script>
+      </body>
+      </html>
+  
+ 
+ <script>
+
+ </script>
+</body>
+</html>
